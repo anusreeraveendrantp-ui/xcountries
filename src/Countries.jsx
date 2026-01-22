@@ -27,7 +27,7 @@ export default function Countries() {
         fetch(ENDPOINT)
             .then((response) => response.json())
             .then((data) => setCountries(data))
-            .catch((error) => console.error("Error fetching countries:", error));
+            .catch((error) => console.error("Error fetching data:", error));
     }, []);   
     return (
         <div>
